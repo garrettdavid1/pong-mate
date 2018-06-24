@@ -1,7 +1,7 @@
 import React from 'react';
 import { StackNavigator } from 'react-navigation';
 
-import { SettingsScreen } from '../screens/SettingsScreen/SettingsScreen';
+import { SettingsScreen } from './SettingsScreen';
 
 const SettingsStackNavigator = StackNavigator({
     List: {

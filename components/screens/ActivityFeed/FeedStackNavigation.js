@@ -1,7 +1,7 @@
 import React from 'react';
 import { StackNavigator } from 'react-navigation';
 
-import { ActivityFeedScreen } from '../screens/ActivityFeedScreen/ActivityFeedScreen';
+import { ActivityFeedScreen } from './ActivityFeedScreen';
 
 const FeedStackNavigator = StackNavigator({
     Feed: {

@@ -1,8 +1,8 @@
 import React from 'react';
 import { StackNavigator } from 'react-navigation';
-import DismissableStackNav from './DismissableStackNavigator';
+import DismissableStackNav from '../../shared/navigation/DismissableStackNavigator';
 
-import { LoginScreen } from '../screens/LoginScreen/LoginScreen';
+import { LoginScreen } from './LoginScreen';
 
 let app = null;
 const LoginNavigator = StackNavigator({

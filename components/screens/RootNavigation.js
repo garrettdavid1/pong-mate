@@ -4,23 +4,39 @@ import { Ionicons } from '@expo/vector-icons';
 import { TabNavigator, TabBarBottom } from 'react-navigation';
 import Colors from '../../lib/constants/Colors';
 
-import FeedStackNavigation from './FeedStackNavigation';
-import PlayerStackNavigation from './PlayerStackNavigation';
-import RecordGameStackNavigation from './RecordGameStackNavigation';
-import SettingsStackNavigation from './SettingsStackNavigation';
+import { ActivityFeedScreen } from './ActivityFeed/ActivityFeedScreen';
+import { RecordGameScreen } from './RecordGame/RecordGameScreen';
+import { PlayerListScreen } from './Players/PlayerListScreen';
+import { SettingsScreen } from './Settings/SettingsScreen';
 
 const RootNavigator = TabNavigator({
     Feed: {
-        screen: FeedStackNavigation
+        screen: ActivityFeedScreen,
+        navigationOptions: {
+          title: 'Feed',
+          headerTitle: 'Feed'
+        }
     },
     Record: {
-        screen: RecordGameStackNavigation
+        screen: RecordGameScreen,
+        navigationOptions: {
+          title: 'Record Game',
+          headerTitle: 'Record Game'
+        }
     },
     Players: {
-        screen: PlayerStackNavigation
+        screen: PlayerListScreen,
+        navigationOptions: {
+          title: 'Player List',
+          headerTitle: 'Player List'
+        }
     },
     Settings: {
-      screen: SettingsStackNavigation,
+      screen: SettingsScreen,
+      navigationOptions: {
+        title: 'Settings',
+        headerTitle: 'Settings'
+      }
     }
 },
 {

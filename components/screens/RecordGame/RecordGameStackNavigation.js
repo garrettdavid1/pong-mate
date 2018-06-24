@@ -1,7 +1,7 @@
 import React from 'react';
 import { StackNavigator } from 'react-navigation';
 
-import { RecordGameScreen } from '../screens/RecordGameScreen/RecordGameScreen';
+import { RecordGameScreen } from './RecordGameScreen';
 
 const RecordGameStackNavigator = StackNavigator({
     List: {

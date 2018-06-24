@@ -1,7 +1,7 @@
 import React from 'react';
 import { StackNavigator } from 'react-navigation';
 
-import { PlayerListScreen } from '../screens/PlayerListScreen/PlayerListScreen';
+import { PlayerListScreen } from './PlayerListScreen';
 
 const PlayerStackNavigator = StackNavigator({
     List: {

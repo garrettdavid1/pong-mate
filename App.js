@@ -2,8 +2,8 @@ import React from 'react';
 import { Platform, StatusBar, StyleSheet, View, Image, AppState } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { AppLoading, Asset, Font } from 'expo';
-import { RootNavigation } from './components/navigation/RootNavigation';
-import { LoginNavigation } from './components/navigation/LoginNavigation';
+import { RootNavigation } from './components/screens/RootNavigation';
+import { LoginNavigation } from './components/screens/Login/LoginNavigation';
 
 console.disableYellowBox = true;
 export default class App extends React.Component {
